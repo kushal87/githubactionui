@@ -1,0 +1,17 @@
+name: Manual Workflow Test
+on: 
+  workflow_dispatch:
+    inputs:
+      choice:
+        type: choice
+        description: Select the protectionConfig
+        options:
+          - Debug
+          - Release
+        default: Debug
+jobs:
+  printInput:
+    runs-on: macos-latest
+    steps:
+      - run: |
+          echo "protectionConfig: ${{ github.event.inputs.choice }}"
