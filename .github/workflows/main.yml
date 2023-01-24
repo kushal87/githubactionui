@@ -9,6 +9,7 @@ on:
         options:
           - Debug
           - Release
+          - Temp
         default: Debug
 jobs:
   printInput:
