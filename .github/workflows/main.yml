@@ -3,6 +3,7 @@ on:
   push:    
    branches:
     - main
+    - test-branch
   workflow_dispatch:    
     inputs:
       choice:
