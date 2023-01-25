@@ -1,7 +1,9 @@
 name: Manual Workflow Test
 on: 
   push:    
-  workflow_dispatch:
+   branches:
+    - "test-branch"
+  workflow_dispatch:    
     inputs:
       choice:
         type: choice
