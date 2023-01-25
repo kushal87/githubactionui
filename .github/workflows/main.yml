@@ -1,6 +1,8 @@
 name: Manual Workflow Test
 on: 
-  push:    
+  push:
+   branches:
+     - "test-branch"
   workflow_dispatch:
     inputs:
       choice:
@@ -8,8 +10,7 @@ on:
         description: Select the protectionConfig
         options:
           - Debug
-          - Release
-          - Temp
+          - Release          
         default: Debug
 jobs:
   printInput:
