@@ -8,8 +8,7 @@ on:
         description: Select the protectionConfig
         options:
           - Debug
-          - Release
-          - Temp
+          - Release          
         default: Debug
 jobs:
   printInput:
