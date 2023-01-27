@@ -12,7 +12,6 @@ on:
         options:
           - Debug
           - Release          
-        default: Debug
 jobs:
   printInput:
     runs-on: macos-latest
